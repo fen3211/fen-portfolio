@@ -107,7 +107,7 @@ export function ProjectCard({
           {project.cover.kind === "image" ? (
             <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-[1.05]">
               <Image
-                src={project.cover.src}
+                src={withBase(project.cover.src)}
                 alt={project.cover.alt}
                 fill
                 sizes={sizesBySpan[project.span]}

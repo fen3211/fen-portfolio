@@ -86,7 +86,7 @@ export function Lightbox({ project, onClose }: { project: Project; onClose: () =
             <div className="absolute inset-0">
               <Image
                 key={media.src}
-                src={media.src}
+                src={withBase(media.src)}
                 alt={media.alt}
                 fill
                 sizes="100vw"
@@ -166,7 +166,7 @@ export function Lightbox({ project, onClose }: { project: Project; onClose: () =
               >
                 {m.kind === "image" || m.poster ? (
                   <Image
-                    src={m.kind === "image" ? m.src : (m.poster as string)}
+                    src={withBase(m.kind === "image" ? m.src : (m.poster as string))}
                     alt=""
                     fill
                     sizes="120px"

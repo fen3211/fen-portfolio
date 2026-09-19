@@ -4,23 +4,27 @@
 3D и видеомонтаж. Тёмная editorial-тема, неоновый лаймовый акцент, плавные
 анимации и интерактивные кейсы с работами из Яндекс.Диска.
 
-## Деплой на Vercel (бесплатно)
+## Деплой — GitHub Pages (настроен и работает)
 
-1. **Создайте репозиторий на GitHub** и отправьте проект:
+Сайт живёт по адресу **https://fen3211.github.io/fen-portfolio/**
 
-   ```bash
-   git remote add origin https://github.com/ВАШ_НИК/fen-portfolio.git
-   git push -u origin main
-   ```
+Деплой автоматический: workflow `.github/workflows/deploy.yml` собирает
+статический экспорт (`npm run build:pages`) и публикует его при каждом пуше
+в `main`. Никаких действий вручную не нужно.
 
-2. **На vercel.com** войдите через GitHub → «Add New… Project» → импортируйте
-   репозиторий. Vercel сам определит Next.js — настройки сборки менять не нужно,
-   нажмите «Deploy».
-3. Через ~минуту сайт будет доступен по адресу `ваш-проект.vercel.app`.
-   Каждый `git push` в `main` обновляет продакшен автоматически.
+Как это устроено:
+- флаг `STATIC_EXPORT=1` включает в `next.config.ts` режим `output: "export"`;
+- `basePath: "/fen-portfolio"` и `NEXT_PUBLIC_BASE_PATH` добавляют префикс
+  к путям (сайт живёт в подпапке домена `fen3211.github.io`);
+- обычные `npm run build` / `npm run start` работают как раньше — флаг
+  используется только в CI.
 
-Альтернатива без GitHub — CLI: `npx vercel` из папки проекта (потребует
-войти в аккаунт Vercel).
+## Vercel (альтернатива)
+
+Vercel идеально подходит под Next.js, но с 2022 года ограничивает новые
+регистрации из ряда стран — если вход не работает, GitHub Pages выше решает
+всё без VPN. Если Vercel доступен: `git remote add origin …` уже настроен,
+достаточно импортировать репозиторий `fen3211/fen-portfolio` на vercel.com.
 
 ## Быстрый старт
 
