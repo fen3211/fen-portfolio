@@ -16,3 +16,6 @@ compress_videos.sh
 # os
 .DS_Store
 Thumbs.db
+
+# typescript
+*.tsbuildinfo
