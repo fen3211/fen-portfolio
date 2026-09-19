@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:pages": "cross-env STATIC_EXPORT=1 next build",
     "start": "next start"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
     "@types/node": "^24.5.0",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
+    "cross-env": "^10.1.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^5.9.2"
   }

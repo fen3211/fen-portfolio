@@ -6,6 +6,7 @@ import { ArrowLeft, ArrowRight, Play, X } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import { categoryLabel, type Project } from "@/data/projects";
 import { startScroll, stopScroll } from "@/lib/lenis";
+import { withBase } from "@/lib/paths";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
@@ -97,8 +98,8 @@ export function Lightbox({ project, onClose }: { project: Project; onClose: () =
           ) : (
             <video
               key={media.src}
-              src={media.src}
-              poster={media.poster}
+              src={withBase(media.src)}
+              poster={media.poster ? withBase(media.poster) : undefined}
               controls
               autoPlay
               loop

@@ -5,6 +5,7 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { ArrowUpRight, Play } from "lucide-react";
 import { useRef, useState } from "react";
 import { categoryLabel, type Project } from "@/data/projects";
+import { withBase } from "@/lib/paths";
 
 const spanClass: Record<Project["span"], string> = {
   wide: "md:col-span-8",
@@ -116,8 +117,8 @@ export function ProjectCard({
           ) : (
             <video
               ref={videoRef}
-              src={project.cover.src}
-              poster={project.cover.poster}
+              src={withBase(project.cover.src)}
+              poster={project.cover.poster ? withBase(project.cover.poster) : undefined}
               muted
               loop
               playsInline

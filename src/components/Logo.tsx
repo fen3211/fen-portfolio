@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { site } from "@/data/site";
+import { withBase } from "@/lib/paths";
 
 /**
  * Логотип из public/assets/logo.svg с фолбэком:
@@ -29,7 +30,7 @@ export function Logo({ className }: { className?: string }) {
     <span className={`group inline-flex items-center select-none ${className ?? ""}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/assets/logo.svg"
+        src={withBase("/assets/logo.svg")}
         alt={`${site.name} — ${site.suffix}`}
         className="h-10 w-auto transition-all duration-500 group-hover:scale-[1.06] group-hover:drop-shadow-[0_0_12px_rgba(212,255,0,0.35)] md:h-11"
         onError={() => setFailed(true)}
