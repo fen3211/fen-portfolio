@@ -1,7 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0D0D0D"/>
-  <ellipse cx="32" cy="30" rx="22" ry="13" fill="none" stroke="#F5F5F5" stroke-width="1.6" opacity="0.9"/>
-  <rect x="14" y="24" width="5" height="26" fill="#F5F5F5" transform="translate(-4,-6)"/>
-  <text x="32" y="55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" letter-spacing="3" fill="#D4FF00" text-anchor="middle">FEN</text>
-  <polygon points="32,15 34,17 32,19 30,17" fill="#D4FF00" opacity="0.9"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 618 618" width="64" height="64">
+  <rect width="618" height="618" rx="96" fill="#121355"/>
+  <g transform="translate(0 58)">
+<line x1="40" y1="219" x2="578" y2="219" stroke="white" stroke-width="0.7" opacity="0.12"/>
+  <ellipse cx="309" cy="250" rx="262" ry="155" fill="none" stroke="white" stroke-width="2" opacity="0.8"/>
+  <ellipse cx="309" cy="250" rx="238" ry="134" fill="none" stroke="white" stroke-width="0.7" opacity="0.22" transform="rotate(2, 309, 250)"/>
+  <rect x="48" y="80" width="44" height="340" fill="white"/>
+  <rect x="92" y="80" width="150" height="3" fill="white"/>
+  <polygon points="238,80 246,80 238,110" fill="white"/>
+  <rect x="92" y="218" width="112" height="3" fill="white"/>
+  <polygon points="200,218 208,218 200,246" fill="white"/>
+  <polygon points="18,89 48,80 92,80 92,89" fill="white"/>
+  <polygon points="18,411 48,420 92,420 92,411" fill="white"/>
+  <rect x="216" y="80" width="44" height="340" fill="white"/>
+  <rect x="260" y="80" width="140" height="3" fill="white"/>
+  <polygon points="396,80 404,80 396,110" fill="white"/>
+  <rect x="260" y="218" width="108" height="3" fill="white"/>
+  <polygon points="364,218 372,218 364,246" fill="white"/>
+  <rect x="260" y="417" width="140" height="3" fill="white"/>
+  <polygon points="396,417 404,417 396,447" fill="white"/>
+  <polygon points="188,89 216,80 260,80 260,89" fill="white"/>
+  <polygon points="188,411 216,420 260,420 260,411" fill="white"/>
+  <rect x="406" y="80" width="36" height="340" fill="white"/>
+  <rect x="537" y="80" width="36" height="340" fill="white"/>
+  <polygon points="406,80 442,80 573,420 537,420" fill="white"/>
+  <polygon points="378,89 406,80 442,80 442,89" fill="white"/>
+  <polygon points="378,411 406,420 442,420 442,411" fill="white"/>
+  <polygon points="537,80 573,80 601,89 537,89" fill="white"/>
+  <polygon points="537,411 537,420 573,420 601,411" fill="white"/>
+  <polygon points="309,90 314,95 309,100 304,95" fill="white" opacity="0.6"/>
+  <polygon points="309,400 314,405 309,410 304,405" fill="white" opacity="0.6"/>
+  <polygon points="43,246 48,251 43,256 38,251" fill="white" opacity="0.6"/>
+  <polygon points="571,246 576,251 571,256 566,251" fill="white" opacity="0.6"/>
+  </g>
 </svg>

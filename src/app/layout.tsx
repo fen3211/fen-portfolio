@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, JetBrains_Mono, Unbounded } from "next/font/google";
+import { Manrope, JetBrains_Mono, Unbounded } from "next/font/google";
 import "./globals.css";
+import "./portfolio.css";
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin", "cyrillic"],
-  variable: "--font-inter",
+  variable: "--font-manrope",
   display: "swap",
 });
 
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0D0D0D",
+  themeColor: "#f7f7fb",
   width: "device-width",
   initialScale: 1,
 };
@@ -47,7 +48,7 @@ export default function RootLayout({
   return (
     <html
       lang="ru"
-      className={`${inter.variable} ${unbounded.variable} ${jbmono.variable}`}
+      className={`${manrope.variable} ${unbounded.variable} ${jbmono.variable}`}
     >
       <body>{children}</body>
     </html>

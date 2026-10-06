@@ -111,7 +111,7 @@ export const projects: Project[] = [
       img("/assets/projects/yt/yt-08.png", "Превью — Стрижка"),
       img("/assets/projects/yt/yt-14.png", "Превью — главная премия ру-стриминга"),
       img("/assets/projects/yt/yt-17.png", "Превью — стримеры, похожие на актёров"),
-      img("/assets/projects/yt/yt-05.png", "Превью — стрим-хата, постер"),
+      img("/assets/projects/yt/yt-05.jpg", "Превью — стрим-хата, постер"),
       img("/assets/projects/yt/yt-10.png", "Превью — восковое безумие"),
       img("/assets/projects/yt/yt-09.png", "Превью — хоррор-эпизод"),
       img("/assets/projects/yt/yt-13.png", "Превью — No, I'm not a Human"),
